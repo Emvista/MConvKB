@@ -1,5 +1,5 @@
 from Config import Config
-from WConvKB import WConvKB
+from MConvKB import MConvKB
 import os
 import numpy as np
 
@@ -130,7 +130,7 @@ if args.mode == "train":
         con.set_init_embeddings(entity_embs, rel_embs)
 
     con.set_config_CNN(num_of_filters=args.num_of_filters, drop_prob=args.dropout, kernel_size=args.kernel_size)
-    con.set_train_model(WConvKB)
+    con.set_train_model(MConvKB)
     con.training_model()
 
 else:
@@ -146,6 +146,6 @@ else:
             con.set_dimension(args.hidden_size)
 
     con.set_config_CNN(num_of_filters=args.num_of_filters, drop_prob=args.dropout, kernel_size=args.kernel_size)
-    con.set_test_model(WConvKB, args.checkpoint_path)
+    con.set_test_model(MConvKB, args.checkpoint_path)
     con.test()
 
