@@ -8,6 +8,8 @@ The two main changes are:
 
 ## Results
 
+The model was evaluated on the RezoJDM16k dataset with the following results:
+
 | **Model** | **MRR** | **MR** | **Hits@10** | **Hits@3** | **Hits@1** |
 |-----------|---|---|---|---|---|
 | TransE    | 0.179 | 203.31 | 0.432 | 0.242 | 0.041 |
@@ -17,3 +19,14 @@ The two main changes are:
 | ComplEx   | 0.253 | 201.58 | 0.533 | 0.304 | 0.117 |
 | ConvKB    | 0.218 | 186.65 | 0.493 | 0.275 | 0.078 |
 | MConvKB   | 0.337 | 158.27 | 0.590 | 0.384 | 0.218 |
+
+## RezoJDM16K Dataset Citation
+
+```
+@article{mirzapour2022,
+  title={Introducing RezoJDM16k: a French Knowledge Graph DataSet for Link Prediction},
+  author={Mirzapour, Mehdi and Ragheb, Waleed and Saeedizade, Mohammad Javad and Cousot, K{\'e}vin and Jacquenet, H{\'e}lene and Carbon, Lawrence and Lafourcade, Mathieu}
+  booktitle={(Proceedings of the 13th Language Resources and Evaluation Conference (LREC)},
+  year={2022}
+}
+```
