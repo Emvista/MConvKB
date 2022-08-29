@@ -1,6 +1,6 @@
-# WConvKB / src
+# MConvKB / src
 
-WConvKB was implemented directly on top of ConvKB.
+MConvKB was implemented directly on top of ConvKB.
 
 Original source can be found here:
   https://github.com/daiquocnguyen/ConvKB
