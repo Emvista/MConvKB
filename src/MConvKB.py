@@ -46,7 +46,7 @@ class MConvKB(Model):
             self.ent_embeddings.weight.data = self.config.init_ent_embs
             self.rel_embeddings.weight.data = self.config.init_rel_embs
 
-        nn.init.xavier_uniform_(self.fc_layer.weight.data)
+        # nn.init.xavier_uniform_(self.fc_layer.weight.data)
         nn.init.xavier_uniform_(self.conv_layer.weight.data)
 
     def _calc(self, h, r, t):
@@ -81,7 +81,7 @@ class MConvKB(Model):
         l2_reg = torch.mean(h ** 2) + torch.mean(t ** 2) + torch.mean(r ** 2)
         for W in self.conv_layer.parameters():
             l2_reg = l2_reg + W.norm(2)
-        for W in self.fc_layer.parameters():
+        for W in self.fc_layer_alter.parameters():
             l2_reg = l2_reg + W.norm(2)
 
         return self.loss(score, l2_reg)
