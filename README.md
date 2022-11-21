@@ -20,8 +20,20 @@ The model was evaluated on the RezoJDM16k dataset with the following results:
 | ConvKB    | 0.218 | 186.65 | 0.493 | 0.275 | 0.078 |
 | MConvKB   | 0.337 | 158.27 | 0.590 | 0.384 | 0.218 |
 
-## RezoJDM16K Dataset Citation
+## References
 
+ConvKB
+```
+@inproceedings{Nguyen2018,
+  author={Dai Quoc Nguyen and Tu Dinh Nguyen and Dat Quoc Nguyen and Dinh Phung},
+  title={A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network},
+  booktitle={Proceedings of the 16th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT)},
+  pages={327--333},
+  year={2018}
+}
+```
+
+RezoJDM16K Dataset
 ```
 @article{mirzapour2022,
   title={Introducing RezoJDM16k: a French Knowledge Graph DataSet for Link Prediction},
@@ -30,3 +42,4 @@ The model was evaluated on the RezoJDM16k dataset with the following results:
   year={2022}
 }
 ```
+
