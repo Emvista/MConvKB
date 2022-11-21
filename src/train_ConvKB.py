@@ -94,8 +94,8 @@ if args.mode == "train":
 
     if args.use_init:
         if args.dataset == "WN18RR":
-            hidden_size = "50"
-            con.set_dimension(50)
+            hidden_size = "200"
+            con.set_dimension(200)
         elif args.dataset == "FB15K-237":
             hidden_size = "100"
             con.set_dimension(100)
